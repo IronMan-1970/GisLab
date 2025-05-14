@@ -8,7 +8,7 @@ def get_centroid(feature):
 shapefile = osgeo.ogr.Open("ukraine_Village_Councils_level_3.shp")
 layer = shapefile.GetLayer(0)
 
-feature_id = 5  # заміни ID за потреби
+feature_id = 5
 feature = layer.GetFeature(feature_id)
 
 if feature is None:
